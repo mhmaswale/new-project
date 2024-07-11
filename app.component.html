@@ -1,0 +1,49 @@
+<div *ngIf="login==0">
+  <button (click)="loginnnn()">Admin Login</button><br> <br>
+<button (click)="loginnnn()">User Login</button><br> <br>
+</div>
+<div *ngIf="login == 1" style="margin: 5px; padding: 10px; border: 1px solid #ccc;">
+  <h1>Login</h1>
+  UserName: <input type="text" [(ngModel)]="userName"><br><br>
+  Password: <input type="password" [(ngModel)]="password"><br><br>
+  <button (click)="showregistor()" style="background-color: #007bff; color: white; padding: 5px 10px; border: none;">Create Account</button>
+  <button (click)="loginMethod()" style="background-color: #28a745; color: white; padding: 5px 10px; border: none;">Login</button>
+</div>
+
+  
+<div *ngIf="login==2">
+<app-admin></app-admin>
+</div>
+
+
+
+
+<div *ngIf="register==1">
+    Name : <input type="text" [(ngModel)]="uname" ng-required="uname"/> <br> <br>
+  City : <input type="text" [(ngModel)]="ucity" />  <br> <br>
+  E-mail. : <input type="text" [(ngModel)]="uemail" ng-required="uemail" /> <br> <br>
+Phone.No. : <input type="text" [(ngModel)]="uphoneno" required ><br> <br>
+User_Name : <input type="text" [(ngModel)]="uusername" /> <br> <br>
+PassWord : <input type="text" [(ngModel)]="upassword" /> <br> <br>
+  <button  type="submit" (click)="registerMethod()">register</button><br> <br>
+
+
+
+</div>
+<!-- Add this code to your app.component.html file -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
